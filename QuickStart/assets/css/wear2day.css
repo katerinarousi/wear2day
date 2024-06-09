@@ -12,13 +12,15 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Nunito",  sans-serif;
-  --nav-font: "Inter",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Nunito", sans-serif;
+  --nav-font: "Inter", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #3d4348; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #3e5055; /* Color for headings, subheadings and title throughout the website */
@@ -28,7 +30,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #313336;  /* The default color of the main navmenu links */
+  --nav-color: purple; /* The default color of the main navmenu links */
   --nav-hover-color: #77b6ca; /* Applied to main navmenu links when they are hovered over or active */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #313336; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -141,7 +143,8 @@ h6 {
 }
 
 .scrolled .header {
-  box-shadow: 0px 0 18px color-mix(in srgb, var(--default-color), transparent 85%);
+  box-shadow: 0px 0 18px
+    color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 /* Index Page Header
@@ -159,6 +162,24 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+
+.intro-container {
+  background-color: rgb(121, 74, 121);
+  padding: 40px 80px 40px 80px;
+}
+
+.intro-container h1 {
+  color: #dcb5ec;
+}
+
+.intro-container .team-name {
+  color: #d172f7;
+} 
+
+.intro-container .highlight {
+  color: #dcb5ec;
+}
+
 /* Desktop Navigation */
 @media (min-width: 1200px) {
   .navmenu {
@@ -203,7 +224,7 @@ h6 {
     padding-right: 0;
   }
 
-  .navmenu li:hover>a,
+  .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
@@ -222,7 +243,8 @@ h6 {
     transition: 0.3s;
     border-radius: 4px;
     z-index: 99;
-    box-shadow: 0px 0px 30px color-mix(in srgb, var(--default-color), transparent 85%);
+    box-shadow: 0px 0px 30px
+      color-mix(in srgb, var(--default-color), transparent 85%);
   }
 
   .navmenu .dropdown ul li {
@@ -242,11 +264,11 @@ h6 {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
+  .navmenu .dropdown ul li:hover > a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover>ul {
+  .navmenu .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -258,7 +280,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover>ul {
+  .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -273,7 +295,8 @@ h6 {
     margin: 0;
     padding: 10px;
     background: var(--nav-dropdown-background-color);
-    box-shadow: 0px 0px 20px color-mix(in srgb, var(--default-color), transparent 90%);
+    box-shadow: 0px 0px 20px
+      color-mix(in srgb, var(--default-color), transparent 90%);
     position: absolute;
     top: 130%;
     left: 0;
@@ -291,7 +314,7 @@ h6 {
   }
 
   .navmenu .megamenu ul li a,
-  .navmenu .megamenu ul li:hover>a {
+  .navmenu .megamenu ul li:hover > a {
     padding: 10px 20px;
     font-size: 15px;
     color: var(--nav-dropdown-color);
@@ -303,7 +326,7 @@ h6 {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .megamenu:hover>ul {
+  .navmenu .megamenu:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -337,7 +360,8 @@ h6 {
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
-    box-shadow: 0px 0px 30px color-mix(in srgb, var(--default-color), transparent 90%);
+    box-shadow: 0px 0px 30px
+      color-mix(in srgb, var(--default-color), transparent 90%);
   }
 
   .navmenu a,
@@ -404,7 +428,7 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -431,7 +455,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
@@ -556,7 +580,7 @@ h6 {
   border-color: var(--accent-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email] {
+.footer .footer-newsletter .newsletter-form input[type="email"] {
   border: 0;
   padding: 4px 10px;
   width: 100%;
@@ -564,11 +588,11 @@ h6 {
   color: var(--default-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
+.footer .footer-newsletter .newsletter-form input[type="email"]:focus-visible {
   outline: none;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit] {
+.footer .footer-newsletter .newsletter-form input[type="submit"] {
   border: 0;
   font-size: 16px;
   padding: 0 20px;
@@ -579,7 +603,7 @@ h6 {
   border-radius: 50px;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit]:hover {
+.footer .footer-newsletter .newsletter-form input[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -638,7 +662,8 @@ h6 {
 .footer .copyright {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .copyright p {
@@ -763,11 +788,11 @@ h6 {
   font-size: 14px;
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .breadcrumbs ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -787,7 +812,6 @@ section,
 }
 
 @media (max-width: 1199px) {
-
   section,
   .section {
     scroll-margin-top: 66px;
@@ -872,7 +896,7 @@ section,
 }
 
 .hero h1 span {
-  color: var(--accent-color);
+  color: #f0f0f0;
 }
 
 .hero p {
@@ -890,46 +914,29 @@ section,
 
 .hero .btn-get-started {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: #bba8bf;
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 15px;
+  margin-left: 180px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px;
   border-radius: 50px;
   transition: 0.5s;
-  box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-color), transparent 80%);
+  box-shadow: 0 8px 28px
+    color-mix(in srgb, var(--accent-color), transparent 80%);
 }
 
 .hero .btn-get-started:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
-  box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-color), transparent 55%);
+  background: purple;
+  box-shadow: 0 8px 28px
+    color-mix(in srgb, var(--accent-color), transparent 55%);
 }
 
-.hero .btn-watch-video {
-  font-size: 16px;
-  transition: 0.5s;
-  margin-left: 25px;
-  color: var(--default-color);
-  font-weight: 600;
-}
-
-.hero .btn-watch-video i {
-  color: var(--accent-color);
-  font-size: 32px;
-  transition: 0.3s;
-  line-height: 0;
-  margin-right: 8px;
-}
-
-.hero .btn-watch-video:hover {
-  color: var(--accent-color);
-}
-
-.hero .btn-watch-video:hover i {
-  color: color-mix(in srgb, var(--accent-color), transparent 15%);
+.clothes-img {
+  margin-top: 50px;
 }
 
 @media (max-width: 640px) {
@@ -958,7 +965,17 @@ section,
   padding: 40px 0;
 }
 
-.featured-services .service-item {
+.featured-services .service-item-1 {
+  position: relative;
+  padding-top: 20px;
+}
+
+.featured-services .service-item-2 {
+  position: relative;
+  padding-top: 20px;
+}
+
+.featured-services .service-item-3 {
   position: relative;
   padding-top: 20px;
 }
@@ -1023,8 +1040,10 @@ section,
 }
 
 .about .content h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 700;
+  line-height: 50px;
+  padding-bottom: 30px;
 }
 
 .about .content ul {
@@ -1047,7 +1066,7 @@ section,
 }
 
 .about .content .read-more {
-  background: var(--accent-color);
+  background: purple;
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
@@ -1152,7 +1171,8 @@ section,
   font-size: 22px;
   flex-shrink: 0;
   border-radius: 50px;
-  box-shadow: 0 2px 4px color-mix(in srgb, var(--default-color), transparent 85%);
+  box-shadow: 0 2px 4px
+    color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .features .nav-link h4 {
@@ -1182,7 +1202,7 @@ section,
 /*--------------------------------------------------------------
 # Features Details Section
 --------------------------------------------------------------*/
-.features-details .features-item+.features-item {
+.features-details .features-item + .features-item {
   margin-top: 60px;
 }
 
@@ -1327,7 +1347,8 @@ section,
 }
 
 .services .service-item:hover {
-  box-shadow: 0px 2px 25px color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0px 2px 25px
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .services .service-item:hover h3 {
@@ -1619,7 +1640,8 @@ section,
 
 .testimonials .testimonial-item {
   background-color: var(--contrast-color);
-  box-shadow: 0px 0 20px color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0px 0 20px
+    color-mix(in srgb, var(--default-color), transparent 90%);
   box-sizing: content-box;
   padding: 30px;
   margin: 40px 30px;
@@ -1726,7 +1748,8 @@ section,
   align-items: center;
   transition: all 0.3s ease-in-out;
   border-radius: 50%;
-  box-shadow: 0 2px 3px color-mix(in srgb, var(--default-color), transparent 85%);
+  box-shadow: 0 2px 3px
+    color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .contact .info-item h3 {
@@ -1793,31 +1816,35 @@ section,
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 50%
+  );
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1826,7 +1853,7 @@ section,
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -1845,17 +1872,19 @@ section,
 --------------------------------------------------------------*/
 .service-details .service-box {
   padding: 20px;
-  box-shadow: 0px 2px 20px color-mix(in srgb, var(--default-color), transparent 88%);
+  box-shadow: 0px 2px 20px
+    color-mix(in srgb, var(--default-color), transparent 88%);
 }
 
-.service-details .service-box+.service-box {
+.service-details .service-box + .service-box {
   margin-top: 30px;
 }
 
 .service-details .service-box h4 {
   font-size: 20px;
   font-weight: 700;
-  border-bottom: 2px solid color-mix(in srgb, var(--default-color), transparent 92%);
+  border-bottom: 2px solid
+    color-mix(in srgb, var(--default-color), transparent 92%);
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
@@ -1900,7 +1929,8 @@ section,
   align-items: center;
   padding: 10px 0;
   transition: 0.3s;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .service-details .download-catalog a:first-child {
